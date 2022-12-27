@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="hero.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Canvas Testing -->
+    <div class="row" style="height: 100px;">
+        <!-- Pseudo Navbar  -->
+    </div>
+    <div class="p-5 text-center bg-image vanta-canvas" style="
+        background-image: url('media/bg-grad.png');
+        width: 100%;
+      ">
+      <!-- <div id="defaultCanvas0" class="p5Canvas vanta-canvas"  style="width: 100%; height: 100%; position: relative; z-index: 5;background: rgb(0, 34, 34); user-select: auto;">
+      </div> -->
+        <div class="row p-5">
+            <div class="col-8 text-col align-items-start">
+                <p class="heading text-start text-uppercase">
+                    Economics & Finance Club
+                </p>
+                <p class="heading text-start text-uppercase">
+                    IIT Delhi
+                </p>
+                <p class="body-text text-start">
+                    The primary challenge faced by a technical institute, at a time when there is an increased
+                    inclination for people to move towards entrepreneurship, is the lack of access to financial
+                    knowledge, which is a prerequisite to implement ideas. Economics club, by the virtue of dealing with
+                    subjects like economics and finance, is in the best position to address this issue.
+                </p>
+                <div class="row align-items-start">
+                    <button class="btn-1 align-self-start">
+                        Get Started
+                    </button>
+                </div>
+                
+            </div>
+            <div class="col img-col">
+                <!-- <img src="media/Group 2026Coins-HQ.png" alt="" class="overflow-visible coins-image"> -->
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/vendor/three.r134.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.dots.min.js" type="text/javascript"></script>
+<script>
+    console.log("hello");
+    window.addEventListener('DOMContentLoaded', (e) => {
+            VANTA.DOTS({
+            el: ".vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            showLines: false
+        });
+        console.log("Should've been executed");
+
+    })
+
+</script>
+</html>

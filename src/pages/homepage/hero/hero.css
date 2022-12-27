@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.heading{
+    font-size: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 4px;
+}
+.text-col{
+    z-index: 3;
+}
+.body-text{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-family: 'Poppins';
+    letter-spacing: 0.5px;
+}
+.coins-image{
+    height: 85%; 
+    position: absolute; 
+    z-index: 1; 
+    left: 60vw
+}
+.btn-1{
+    width: 361px;
+    height: 93px;
+    background-color: #AF6F1C;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 0rem;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    transition: all 0.1s;
+    position: relative;
+
+}
+.btn-1:hover{
+    box-shadow: 5px 5px rgba(0,0,0,0);
+    background-color: #935e18;
+
+    /* left: 2.5px;
+    top: 2.5px; */
+    /* letter-spacing: 1.6px; */
+}
+
