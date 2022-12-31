@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 
 import p5 from "p5";
-// import TOPOLOGY from "vanta/dist/vanta.topology.min.js";
+import TOPOLOGY from "vanta/dist/vanta.topology.min.js";
 // import DOTS from "vanta/dist/vanta.dots.min.js";
 // import RINGS from "vanta/dist/vanta.rings.min.js";
 import HALO from "vanta/dist/vanta.halo.min.js";
@@ -14,18 +14,11 @@ export default class Hero extends React.Component {
 
       }
       componentDidMount() {
-        this.vantaEffect = HALO({
+        this.vantaEffect = TOPOLOGY({
           el: this.vantaRef.current,
           p5:p5,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          amplitudeFactor: 0.80,
-          backgroundColor: 0x40822,
-          xOffset: 0.30,
-          size: 1.30
+        color:'#bd6f0c', 
+        backgroundColor:"#031535",
         })
       }
       componentWillUnmount() {
