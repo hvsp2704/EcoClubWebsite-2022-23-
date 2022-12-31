@@ -1,12 +1,13 @@
 import React from "react";
 
+import "./header.css"
 import logo from "./eco.png";
 export default class Header extends React.Component{
     render(){
         return(
             <nav
   className="navbar navbar-expand-sm sticky-top navbar-dark"
-  style={{ backgroundColor: "rgb(255, 254, 254)" }}
+  style={{ backgroundColor: "rgb(255, 254, 254)"}}
 >
   <div className="container">
     {/* Replace this with your own logo */}
