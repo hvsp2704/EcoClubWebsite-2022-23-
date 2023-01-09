@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./header.css"
-import logo from "./eco.png";
+import logo from "media/eco.png";
 export default class Header extends React.Component{
     render(){
         return(
@@ -46,10 +46,15 @@ export default class Header extends React.Component{
             Blog{" "}
           </a>
         </li>
-        <li className="nav-item active">
+        {/* <li className="nav-item active">
           <a href="#" className="nav-link active" style={{ color: "black" }}>
             {" "}
             Team{" "}
+          </a>
+        </li> */}
+        <li className="nav-item">
+          <a href="/winterschool" className="nav-link" style={{ color: "black" }}>
+            Winter School{" "}
           </a>
         </li>
       </ul>
