@@ -13,7 +13,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   position: relative;
   color: white;
   background: #1e1e1e;

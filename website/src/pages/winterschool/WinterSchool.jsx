@@ -4,7 +4,7 @@ import $ from 'jquery';
 import optiver_logo from "./media/optiverlogo.png";
 import eco_logo from "media/eco.png";
 import "./winterschool.css";
-import Timeline from "./Timeline/Timeline";
+import EventsTimeline from "./Timeline/EventsTimeline";
 
 class StickyNavigation {
 	constructor() {
@@ -111,7 +111,7 @@ export default class WinterSchool extends React.Component{
                     <h3>something about es6</h3>
                 </section>
                 <section className="et-slide" id={this.sectionIds[1]}>
-                    <Timeline></Timeline>
+                    <EventsTimeline></EventsTimeline>
                 </section>
                 <section className="et-slide" id={this.sectionIds[2]}>
                     <h1>Register</h1>
