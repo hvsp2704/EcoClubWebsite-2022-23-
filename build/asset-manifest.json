@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/EcoClubWebsite-2022-23-/static/css/main.139cf0c3.css",
+    "main.js": "/EcoClubWebsite-2022-23-/static/js/main.6ae6f12e.js",
+    "static/media/eco.png": "/EcoClubWebsite-2022-23-/static/media/eco.c8ffc6dcb99ad56fa5c1.png",
+    "static/media/logo.png": "/EcoClubWebsite-2022-23-/static/media/logo.66e940475b98dcb80ccc.png",
+    "static/media/background.png": "/EcoClubWebsite-2022-23-/static/media/background.38289c7c17722c828184.png",
+    "static/media/farmer.png": "/EcoClubWebsite-2022-23-/static/media/farmer.da8ab7997f91b39ada2d.png",
+    "static/media/img-2.png": "/EcoClubWebsite-2022-23-/static/media/img-2.2869b7a030d5c7477a87.png",
+    "static/media/optiverlogo.png": "/EcoClubWebsite-2022-23-/static/media/optiverlogo.4f072beebef7d71facb7.png",
+    "index.html": "/EcoClubWebsite-2022-23-/index.html",
+    "main.139cf0c3.css.map": "/EcoClubWebsite-2022-23-/static/css/main.139cf0c3.css.map",
+    "main.6ae6f12e.js.map": "/EcoClubWebsite-2022-23-/static/js/main.6ae6f12e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.139cf0c3.css",
+    "static/js/main.6ae6f12e.js"
+  ]
+}

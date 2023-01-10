@@ -1,45 +1,64 @@
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="hero.css" />
-        {/* Canvas Testing */}
-        <div className="row" style={{height: '100px'}}>
-          {/* Pseudo Navbar  */}
-        </div>
-        <div className="p-5 text-center bg-image vanta-canvas" style={{backgroundImage: 'url("media/bg-grad.png")', width: '100%'}}>
-          {/* <div id="defaultCanvas0" class="p5Canvas vanta-canvas"  style="width: 100%; height: 100%; position: relative; z-index: 5;background: rgb(0, 34, 34); user-select: auto;">
-      </div> */}
-          <div className="row p-5">
-            <div className="col-8 text-col align-items-start">
-              <p className="heading text-start text-uppercase">
-                Economics &amp; Finance Club
-              </p>
-              <p className="heading text-start text-uppercase">
-                IIT Delhi
-              </p>
-              <p className="body-text text-start">
-                The primary challenge faced by a technical institute, at a time when there is an increased
-                inclination for people to move towards entrepreneurship, is the lack of access to financial
-                knowledge, which is a prerequisite to implement ideas. Economics club, by the virtue of dealing with
-                subjects like economics and finance, is in the best position to address this issue.
-              </p>
-              <div className="row align-items-start">
-                <button className="btn-1 align-self-start">
-                  Get Started
-                </button>
-              </div>
+import React from "react";
+import "./Hero.css";
+
+import p5 from "p5";
+import TOPOLOGY from "vanta/dist/vanta.topology.min.js";
+import DOTS from "vanta/dist/vanta.dots.min.js";
+import RINGS from "vanta/dist/vanta.rings.min.js";
+import HALO from "vanta/dist/vanta.halo.min.js";
+
+export default class Hero extends React.Component {
+    constructor() {
+        super()
+        this.vantaRef = React.createRef()
+
+    }
+    componentDidMount() {
+        this.vantaEffect = TOPOLOGY({
+            el: this.vantaRef.current,
+            p5: p5,
+            color: '#bd6f0c',
+            backgroundColor: "#031535",
+            showLines:false,
+            scaleMobile: 1.5,
+            scale:1.00,
+        })
+    }
+    componentWillUnmount() {
+        if (this.vantaEffect) {
+            this.vantaEffect.destroy();
+        }
+    }
+
+    render() {
+        return (
+            <div className=" text-center bg-image vanta-canvas" ref={this.vantaRef}>
+                <div className="row p-5">
+                    <div className="col-lg-8 text-col align-items-start">
+                        <h1 className="heading text-start text-uppercase">
+                            Economics &amp; Finance Club
+                        </h1>
+                        <h2 className="heading text-start">IIT DELHI</h2>
+                        <p className="lead body-text text-start">
+                            The primary challenge faced by a technical institute, at a time when
+                            there is an increased inclination for people to move towards
+                            entrepreneurship, is the lack of access to financial knowledge, which is
+                            a prerequisite to implement ideas. Economics club, by the virtue of
+                            dealing with subjects like economics and finance, is in the best
+                            position to address this issue.
+                        </p>
+                        <div className="row align-items-start">
+                            <a href="#" class="btn_custom btn_custom-1">
+                                <svg>
+                                    <rect x="1" y="1" fill="none" width="100%" height="100%" rx={0} ry={0} />
+                                </svg>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="col img-col">
-              {/* <img src="media/Group 2026Coins-HQ.png" alt="" class="overflow-visible coins-image"> */}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-});
+
+        )
+    }
+}
